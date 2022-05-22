@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <header class="myHeader">
+        <div class="myTitle"> <span class="title-word title-word-1"> It's</span>
+            <span class="title-word title-word-2"> My </span>
+            <span class="title-word title-word-3"> Task </span>
+            <span class="title-word title-word-4"> Board </span>
+        </div>
+        <img class="taskPic" src="img/4697260.png" alt="">
+    </header> 
+
+    <form action="">
+
+        <table class="details">
+            <tr>
+                <td> <label class="font">Task's Description</label> </td>
+                <td><textarea class="designInput" id="desc" cols="13" rows="6" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label class="font">Task Execution Date </label></td>
+                <td><input class="designInput" type="date" id="date" required></td>
+            </tr>
+
+            <tr>
+                <td> <label class="font">Task Execution Time</label></td>
+                <td><input class="designTime" type="time" id="time" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="move" id="btn_add"><i class="bi bi-plus"></i> <label>Add Task</label></button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="move1" id="btn_clear"><i class="bi bi-x"></i>Reset</button></td>
+            </tr>
+
+        </table>
+
+
+
+    </form>
+
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th> <label class="font">Task's Number</label> </th>
+                <th><label class="font">Task's Description</label></th>
+                <th><label class="font">Task's Date</label></th>
+                <th><label class="font">Task's Time</label></th>
+            </tr>
+
+        </thead>
+        <tbody id="myTable">
+
+        </tbody>
+    </table> 
+
+
+    <footer class="footer">
+
+                <i class="bi bi-facebook"></i>  &nbsp 
+                <i class="bi bi-twitter"></i> &nbsp 
+                <i class="bi bi-linkedin"></i> &nbsp  
+                <i class="bi bi-github"></i>
+               
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
